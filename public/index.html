@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enterprise Security Gateway</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main>
+    <h1>Enterprise Security Gateway</h1>
+    <p class="sub">CSC337 Lab 05 - Hybrid Auth (JWT + OAuth 2.0), RBAC &amp; OWASP hardening</p>
+
+    <section>
+      <h2>1. Authenticate</h2>
+      <div class="row">
+        <input id="email" type="email" placeholder="Email" autocomplete="username" />
+        <input id="password" type="password" placeholder="Password" autocomplete="current-password" />
+      </div>
+      <div class="row">
+        <input id="name" type="text" placeholder="Name (register only)" />
+      </div>
+      <div class="row">
+        <button id="btn-login">Login</button>
+        <button id="btn-register" class="alt">Register</button>
+        <button id="btn-refresh" class="alt">Refresh token</button>
+        <button id="btn-logout" class="danger">Logout</button>
+      </div>
+      <div class="row">
+        <a class="btn google" href="/api/v1/auth/google">Continue with Google</a>
+        <a class="btn github" href="/api/v1/auth/github">Continue with GitHub</a>
+      </div>
+      <p>Status: <strong id="status">Not logged in</strong></p>
+    </section>
+
+    <section>
+      <h2>2. Test RBAC routes</h2>
+      <div class="row">
+        <button id="btn-profile">GET /employee/profile (all roles)</button>
+        <button id="btn-users" class="alt">GET /users (SuperAdmin)</button>
+      </div>
+      <div class="row">
+        <input id="employeeId" placeholder="employeeId (from GET /users)" />
+        <input id="amount" type="number" placeholder="Amount" value="50000" />
+        <button id="btn-payroll">POST /payroll/approve (Manager, SuperAdmin)</button>
+      </div>
+      <div class="row">
+        <input id="deleteId" placeholder="user id to delete" />
+        <button id="btn-delete" class="danger">DELETE /users/:id (SuperAdmin)</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Response</h2>
+      <pre id="out">Ready.</pre>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
