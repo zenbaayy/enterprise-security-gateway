@@ -4,8 +4,9 @@ CSC337 - Advanced Web Technologies - Lab Assignment 05
 
 Node.js + Express + MongoDB gateway with hybrid authentication (local Bcrypt + Google/GitHub OAuth 2.0), access/refresh token rotation, role-based access control and OWASP hardening.
 
-**Live URL:** https://YOUR-APP.onrender.com  (replace after deploying)
-**GitHub:** https://github.com/YOUR-USERNAME/enterprise-security-gateway  (replace)
+**Live URL:** https://enterprise-security-gateway-a50d.onrender.com
+
+**GitHub:**  https://github.com/zenbaayy/enterprise-security-gateway
 
 ## Test credentials
 
