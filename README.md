@@ -17,6 +17,14 @@ Node.js + Express + MongoDB gateway with hybrid authentication (local Bcrypt + G
 | Employee   | employee@example.com     | Employee@123    |
 
 These accounts are auto-created on startup (`SEED_TEST_USERS=true`).
+## github connected
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e954a243-d7ab-4044-83b6-ee64e065c5b0" />
+
+## manager login
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e60aa66b-d28d-43dc-b75d-f41c57ded857" />
+## failed attempts
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ec286814-f386-443b-b61f-59267707015e" />
+
 
 ## Features mapped to the assignment
 
@@ -66,33 +74,33 @@ For Postman over plain `http://localhost`, set `COOKIE_SECURE=false` in `.env` (
 3. **Render**: New > Web Service > connect the repo. Build command `npm install`, start command `npm start`. (Or use New > Blueprint, which reads `render.yaml`.)
 4. Add environment variables in Render:
    - `NODE_ENV=production`
-   - `BASE_URL=https://YOUR-APP.onrender.com` (no trailing slash)
+   - `BASE_URL=https:https://enterprise-security-gateway-a50d.onrender.com (no trailing slash)
    - `MONGODB_URI=...`
    - `JWT_ACCESS_SECRET=...` and `JWT_REFRESH_SECRET=...` (two different long random strings)
    - `SEED_TEST_USERS=true`
    - OAuth keys (next section)
-5. Deploy, then open `https://YOUR-APP.onrender.com/health` (should return `{"status":"ok"}`) and the home page.
+5. Deploy, then open https://enterprise-security-gateway-a50d.onrender.com/health (should return `{"status":"ok"}`) and the home page.
 
 Free Render services sleep after inactivity. Open the URL a minute before your viva.
 
 ## OAuth setup
 
 **Google** (console.cloud.google.com > APIs & Services > Credentials > OAuth client ID > Web application)
-- Authorized redirect URI: `https://YOUR-APP.onrender.com/api/v1/auth/google/callback`
-- Also add `http://localhost:5000/api/v1/auth/google/callback` for local testing
+- Authorized redirect URI: https://enterprise-security-gateway-a50d.onrender.com/api/v1`
+- Also add https://enterprise-security-gateway-a50d.onrender.com for local testing
 - Set `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET`
 - On the OAuth consent screen, add yourself as a test user if the app is in "Testing" mode
 
 **GitHub** (Settings > Developer settings > OAuth Apps > New)
-- Homepage URL: `https://YOUR-APP.onrender.com`
-- Authorization callback URL: `https://YOUR-APP.onrender.com/api/v1/auth/github/callback`
+- Homepage URL: https://enterprise-security-gateway-a50d.onrender.com
+- Authorization callback URL: `https://enterprise-security-gateway-a50d.onrender.com/api/v1
 - Set `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET`
 
 A provider whose keys are missing simply returns 501 and the rest of the app keeps working.
 
 ## Viva cheat-sheet (Postman or curl)
 
-Replace `$URL` with your deployed URL.
+https://enterprise-security-gateway-a50d.onrender.com
 
 **1. Login and get tokens**
 ```bash
