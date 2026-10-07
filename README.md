@@ -17,13 +17,25 @@ Node.js + Express + MongoDB gateway with hybrid authentication (local Bcrypt + G
 | Employee   | employee@example.com     | Employee@123    |
 
 These accounts are auto-created on startup (`SEED_TEST_USERS=true`).
-## github connected
+### github connected
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e954a243-d7ab-4044-83b6-ee64e065c5b0" />
 
-## manager login
+### manager login
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e60aa66b-d28d-43dc-b75d-f41c57ded857" />
-## failed attempts
+
+### failed attempts account lock
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ec286814-f386-443b-b61f-59267707015e" />
+### employe file
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f2b84050-a6c6-4206-8b56-c9bbf67c7b62" />
+
+### refresh token
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f453391b-5548-4f57-b669-f73c5d93084e" />
+
+
+### supeer login
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9dcad08d-6522-4012-8b45-93350cd6a607" />
+
 
 
 ## Features mapped to the assignment
