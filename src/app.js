@@ -44,6 +44,7 @@ app.use(sanitize); // NoSQL-injection + XSS sanitisation of body/query/params
 app.use(passport.initialize());
 
 app.get('/health', (req, res) => res.json({ status: 'ok' }));
+app.get('/api/v1', (req, res) => res.json({ name: 'Enterprise Multi-Tenant Security Gateway', status: 'running', endpoints: ['POST /api/v1/auth/register', 'POST /api/v1/auth/login', 'POST /api/v1/auth/refresh', 'POST /api/v1/auth/logout', 'GET /api/v1/employee/profile', 'POST /api/v1/payroll/approve', 'DELETE /api/v1/users/:id'] }));
 
 app.use('/api', apiLimiter);
 app.use('/api/v1/auth', require('./routes/auth'));
