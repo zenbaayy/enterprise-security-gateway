@@ -27,14 +27,17 @@ These accounts are auto-created on startup (`SEED_TEST_USERS=true`).
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ec286814-f386-443b-b61f-59267707015e" />
 ### employe file
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f2b84050-a6c6-4206-8b56-c9bbf67c7b62" />
-
-### refresh token
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f453391b-5548-4f57-b669-f73c5d93084e" />
 
 
+### refresh token
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f2b84050-a6c6-4206-8b56-c9bbf67c7b62" />
+
+
 ### supeer login
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9dcad08d-6522-4012-8b45-93350cd6a607" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/99c5fd53-b9f3-472c-954a-87a2dd1fc881" />
+
+
 
 
 
